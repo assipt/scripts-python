@@ -41,4 +41,7 @@ def sim_ou_não(msg, ntentativas=3, x="s"):
         
     msg = f"{msg} (s/n): "
     return entrada(msg, converter_sn, xmin=None, xmax=None, x=x)
-    
+
+
+def num_string(x, n=3):
+    return str(x + 10**n)[1:]
